@@ -18,10 +18,10 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg rounded-0">
+    <nav class="navbar navbar-dark navbar-expand-lg rounded-0">
 
         <div class="container ">
-            <a class="navbar-brand text-light" href="#">Harish Sheoran</a>
+            <a class="navbar-brand " href="#" id="invert">Harish </a>
             <div class="collapse navbar-collapse ">
                 <ul class=" navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item ">
@@ -36,20 +36,7 @@
 
     </nav>
 
-    <div class="nav-scroller shadow-sm d-flex justify-content-center ">
 
-        <nav class="nav" aria-label="Secondary navigation">
-            <a class="nav-link active" aria-current="page" href="#"> Current New!</a>
-            <a class="nav-link" href="#resource">
-                Resources
-            </a>
-            <a class="nav-link" href="https://twitter.com/sheoranharis" target="_blank">Twitter</a>
-            <a class="nav-link" href="https://github.com/sheoranharis" target="_blank">Github</a>
-            <a class="nav-link" href="https://www.linkedin.com/m/in/harish-sheoran-986b1522b"
-                target="_blank">LinkedIn</a>
-        </nav>
-
-    </div>
 
 
     <section>
@@ -58,13 +45,13 @@
         <div class="container mt-5">
 
             <!--main row-->
-            <div class="row pb-5 ">
+            <div class="row">
 
                 <!--First Main Container-->
-                <div class="contianer pt-5 pb-5">
+                <div class="contianer pb-5">
 
                     <!--Info Dub Row-->
-                    <div class="row pt-5 pb-5 ">
+                    <div class="row pt-sm-5 pb-5 ">
 
                         <!--Info Column-->
                         <div class="col d-flex justify-content-center ">
@@ -72,7 +59,20 @@
                             <article class="blog-post">
 
                                 <h1 class="">Hello there, I am Harish</h1>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">New!</button>
 
+                                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                                    aria-labelledby="offcanvasTopLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasTopLabel">New!</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        ...
+                                    </div>
+                                </div>
                                 <div class="h1 py-4">
                                     <a href="https://twitter.com/sheoranharis" target="_blank"><i
                                             class="bi bi-twitter text-info"></i></a>
@@ -140,7 +140,7 @@
                         <!--current column-->
                         <div class="col pt-5 pb-5">
 
-                            <div class="card rounded-0 p-4" style="width: auto; height: auto; color: black;">
+                            <div class="card rounded-0 p-4 current" style="width: auto; height: auto; color: black;">
                                 <div class="card-body">
 
                                     <h5 class="card-title">Currently working on Bug Tracker</h5>
@@ -149,10 +149,10 @@
                                     </p>
 
                                     <p>Open Source Project <a href="https://github.com/sheoranharis/Bug-Tracker"
-                                            target="_blank" class="link-info text-decoration-none">(Source)</a></p>
+                                            target="_blank" class="link-danger text-decoration-none">(Source)</a></p>
 
                                     <p>View <a href="https://github.com/sheoranharis/Bug-Tracker/blob/main/SRS.md"
-                                            target="_blank" class="link-info text-decoration-none">System Requirement
+                                            target="_blank" class="link-danger text-decoration-none">System Requirement
                                             Specification</a> </p>
 
                                 </div>
@@ -250,7 +250,7 @@
             </div>
 
         </div>
-
+        <script src="app.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
             crossorigin="anonymous"></script>
