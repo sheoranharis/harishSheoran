@@ -1,13 +1,17 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #f2f3f4;
+    color: #1c2833;
 
 }
 .invert{
-    background-color: white;
-    color:black
+    background-color: black;
+    color:white;
 }
 
 .current{
     background-color: #42dca3;
+}
+
+.small{
+    font-size: 10px;
 }
