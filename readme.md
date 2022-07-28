@@ -1,4 +1,4 @@
-###### A simple static Personal Website.
+##### A simple static Personal Website.
  Tech Stack
 - Bootstrap
 - Vanilla Js
